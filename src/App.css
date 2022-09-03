@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: "lato",sans-serif;
+    font-weight: 900;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #777;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.home{
+  height: 100vh;
+    background-image: linear-gradient(to right bottom,
+     rgba(127, 213, 103, 0.9),
+     rgba(40, 180, 133, 0.5)), 
+     url(./images/article-2.png);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+}
+
+.header__text-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  
+}
+.heading-primary{
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom:6rem;
+
+}
+.heading-primary--main{
+  display: block;
+  font-size: 7.5rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+}
+.heading-primary--sub{
+  display: block;
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: .3rem ;
+  color: black;
+ 
+}
+.btn-start{
+  background-color: white;
+  border: 2px solid #4CAF50; /* Green */
+  border-radius: 2rem;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
