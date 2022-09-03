@@ -1,10 +1,13 @@
 import React from 'react'
-
-
 import '../../src/App.css';
+import { useNavigate } from "react-router-dom";
 
 
 function Home() {
+  
+  let navigate = useNavigate();
+ 
+
   return (
     <div className="home">
     
@@ -14,7 +17,9 @@ function Home() {
             <span className="heading-primary--sub">Motivation can take you far</span>
         </h1>
 
-        <button className="btn-start">Get Started On your Read</button>
+       
+        <button onClick={()=>{navigate('/allarticles')}} className="btn-start">Get Started On your Read</button>
+        
     </div>
     </div>
   )

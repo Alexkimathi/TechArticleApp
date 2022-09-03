@@ -69,3 +69,7 @@ body{
   font-size: 2rem;
   font-weight: 900;
 }
+.btn-start:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
