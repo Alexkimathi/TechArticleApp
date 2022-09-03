@@ -2,12 +2,10 @@ import React from 'react'
 import '../../src/App.css';
 import { useNavigate } from "react-router-dom";
 
-
 function Home() {
   
   let navigate = useNavigate();
  
-
   return (
     <div className="home">
     
