@@ -6,12 +6,12 @@ function Navbar() {
   return (
     <nav className="nav">
       <div className="site-title">
-        <NavLink to={"/"} exact="true">
+        <NavLink to={"/navbar"} exact="true">
           TECH-ARTICLES
         </NavLink>
       </div>
       <ul>
-        <NavLink to={"/"} exact="true">
+        <NavLink to={"/allarticles"} exact="true">
           All Articles
         </NavLink>
         <NavLink to={"/newarticles"} exact="true">
